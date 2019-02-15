@@ -54,11 +54,11 @@ curl -i -X POST \
   "status": 1,
   "data":{
     "text": "8.3分！小哥颜值好高，帅帅的，有点是我的菜[坏笑]",
-    "imageUrl": "http://mediaplatform.trafficmanager.cn/image/fetchimage?  key=UQAfAC8ABAAAAFcAFgAGABYASgBNAEIAMQBGAEIARAAyADMAMwAzADAAQwAxADYAMQBDADcAMwAzAEIANgBCADUANgBGAEUARQA2AEUAMABBAEMA",
+    "imageUrl": "http://mediaplatform.trafficmanager.cn/image/fetchimage?key=UQAfAC8ABAAAAFcAFgAGABYAS...",
     "metadata":{
       "AnswerFeed": "FaceBeautyRanking",
-      "w": "YEdSisHliuTohN_Ghvb9gMPzrOPZvczchuL7iuTlhNfMht3djvvrpt_pvvXoiMvag8DGh-fYhP_cge7zEob4147N_hQ=",
-      "aid": "E6FE8272B83905DE588F08CFC65CBF48"
+      "w": "YEdSisHliuTohN_Ghvb9gMPzrOPZ.....",
+      "aid": "E6FE8272B83905DE588..."
     }
   }
 }
