@@ -3,7 +3,7 @@ import bodyParser from 'body-parser'
 import multer from 'multer'
 import uuid from 'uuid/v4'
 import * as xb from './xiaobing-node-api'
-import LRU from "lru-cache"
+import LRU from 'lru-cache'
 import { isEmpty, trim, toBase64 } from './utils'
 
 const app = express()
@@ -16,10 +16,10 @@ app
 
 .get('/getServiceToken', async (req, resp, next) => {
   var params = req.query
-  if ( isEmpty(trim(params.serviceName)) ) {
-    return resp.json({ status: 0, msg: 'serviceName 不能为空' })
+  if ( isEmpty(trim(params.service)) ) {
+    return resp.json({ status: 0, msg: 'service 不能为空' })
   }
-  var ctx = await xb.getContext(params.serviceName)
+  var ctx = await xb.getContext(params.service)
   var token = uuid()
   cache.set(token, ctx)
   return resp.json({ status: 1, msg: 'ok', data: token })
