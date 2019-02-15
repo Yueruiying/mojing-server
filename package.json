@@ -6,7 +6,8 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "./node_modules/.bin/babel-node app.js"
+    "start": "./node_modules/.bin/babel-node app.js",
+    "daemon-start": "./node_modules/.bin/forever start --minUptime 5000 --spinSleepTime 5000 ./node_modules/.bin/babel-node app.js"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -19,6 +20,7 @@
     "uuid": "^3.3.2"
   },
   "devDependencies": {
+    "forever": "^0.15.3",
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
     "@babel/node": "^7.2.2",
