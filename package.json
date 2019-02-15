@@ -1,0 +1,30 @@
+{
+  "name": "xiaobing",
+  "version": "1.0.0",
+  "description": "xiaoping api simple",
+  "main": "index.js",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "./node_modules/.bin/babel-node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concat-stream": "^2.0.0",
+    "express": "^4.16.4",
+    "lru-cache": "^5.1.1",
+    "multer": "^1.4.1",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-async-to-generator": "^7.2.0",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.3.1"
+  }
+}
