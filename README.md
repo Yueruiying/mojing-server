@@ -1,27 +1,27 @@
 # mojing-server
 魔镜后端服务
 
-## init
+## Init
 ```
 npm install
 ```
 
-## run
+## Run
 ```
 npm run start
 ```
 
-## daemon
+## Daemon
 ```
 npm run daemon-start
 ```
 
-## deploy in server
+## Deploy in server
 ```
 git clone https://github.com/Yueruiying/mojing-server.git && cd mojing-server && npm i && npm run daemon-start
 ```
 
-## nginx reverse proxy config
+## Nginx reverse proxy config
 ```
 location /xiaobing/ {
     proxy_pass    http://127.0.0.1:9102/;
@@ -32,7 +32,7 @@ location /xiaobing/ {
 }
 ```
 
-## api usage
+## Api usage
 ```
 1.) Get Service Token
 curl -i -X GET \
@@ -47,8 +47,8 @@ curl -i -X GET \
 2.) Image Analyze By Service Token
 curl -i -X POST \
    -H "Content-Type:multipart/form-data" \
-   -F "image=" \
- 'http://127.0.0.1:9102/imageAnalyze?token=73a0d77a-bf6f-480a-b050-f68de0977e73'
+   -F "image=@\"./test_image.jpeg\";type=image/jpeg;filename=\"test_image.jpeg\"" \
+ 'https://dev.sdotechnology.com/xiaobing/imageAnalyze?token=73a0d77a-bf6f-480a-b050-f68de0977e73'
 
 {
   "status": 1,
