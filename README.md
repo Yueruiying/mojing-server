@@ -48,7 +48,7 @@ curl -i -X GET \
 curl -i -X POST \
    -H "Content-Type:multipart/form-data" \
    -F "image=@\"./test_image.jpeg\";type=image/jpeg;filename=\"test_image.jpeg\"" \
- 'https://dev.sdotechnology.com/xiaobing/imageAnalyze?token=73a0d77a-bf6f-480a-b050-f68de0977e73'
+ 'http://127.0.0.1:9102/imageAnalyze?token=73a0d77a-bf6f-480a-b050-f68de0977e73'
 
 {
   "status": 1,
