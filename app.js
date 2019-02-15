@@ -10,6 +10,7 @@ const app = express()
 app.use(bodyParser.json())
 
 const cache = new LRU({ maxAge: 1000 * 60 * 60 * 10, max: 50 })
+const upload = multer({ dest: 'uploads/' })
 
 app
 
@@ -23,8 +24,6 @@ app
   cache.set(token, ctx)
   return resp.json({ status: 1, msg: 'ok', data: token })
 })
-
-var upload = multer({ dest: 'uploads/' })
 
 app.post('/imageAnalyze', upload.single('image'), async (req, resp, next) => {
   var params = req.query
