@@ -52,6 +52,7 @@ curl -i -X POST \
 
 {
   "status": 1,
+  "msg": "ok",
   "data":{
     "text": "8.3分！小哥颜值好高，帅帅的，有点是我的菜[坏笑]",
     "imageUrl": "http://mediaplatform.trafficmanager.cn/image/fetchimage?key=UQAfAC8ABAAAAFcAFgAGABYAS...",
